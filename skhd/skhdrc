@@ -1,0 +1,53 @@
+:: yabai @
+
+ctrl - m ; yabai
+
+yabai < escape ; default
+
+yabai < a : skhd -k "escape"; ~/.config/yabai/main.sh select "Slack"
+yabai < 0x29 : skhd -k "escape"; ~/.config/yabai/main.sh select "Messages"
+yabai < e : skhd -k "escape"; ~/.config/yabai/main.sh select "Emacs"
+yabai < o : skhd -k "escape"; ~/.config/yabai/main.sh select "Left Google Chrome"
+yabai < q : skhd -k "escape"; ~/.config/yabai/main.sh select "Bear"
+yabai < u : skhd -k "escape"; ~/.config/yabai/main.sh select "Right Google Chrome"
+yabai < p : skhd -k "escape"; ~/.config/yabai/main.sh select "Spotify"
+
+yabai < h : skhd -k "escape"; yabai -m window --focus west
+yabai < j : skhd -k "escape"; yabai -m window --focus south
+yabai < k : skhd -k "escape"; yabai -m window --focus north
+yabai < l : skhd -k "escape"; yabai -m window --focus east
+
+yabai < shift - h : skhd -k "escape"; yabai -m window --focus stack.prev
+yabai < shift - l : skhd -k "escape"; yabai -m window --focus stack.next
+
+yabai < r : skhd -k "escape"; skhd -r
+
+yabai < return : skhd -k "escape"; yabai -m window --swap largest
+yabai < space : skhd -k "escape"; yabai -m window --toggle zoom-fullscreen
+
+alt + shift - a : ~/.config/yabai/main.sh select "Slack"
+alt + shift - 0x29 : ~/.config/yabai/main.sh select "Messages"
+alt + shift - 0x27 : ~/.config/yabai/main.sh select "Bear"
+alt + shift + cmd - a : ~/.config/yabai/main.sh select "Discord"
+alt + shift + cmd - 0x27 : ~/.config/yabai/main.sh select "Things"
+alt + shift - e : ~/.config/yabai/main.sh select "Emacs"
+alt + shift - o : ~/.config/yabai/main.sh select "Google Chrome" left middle
+alt + shift - q : ~/.config/yabai/main.sh select "Fantastical"
+alt + shift - 0x2B : ~/.config/yabai/main.sh select "Airmail"
+alt + shift + cmd - 0x2B : ~/.config/yabai/main.sh select "Jira"
+alt + shift - u : ~/.config/yabai/main.sh select "Google Chrome" right middle
+alt + shift - p : ~/.config/yabai/main.sh select "Spotify"
+
+alt + shift - h : yabai -m window --focus west
+alt + shift - j : yabai -m window --focus south
+alt + shift - k : yabai -m window --focus north
+alt + shift - l : yabai -m window --focus east
+
+alt + shift + cmd - h : yabai -m window --focus stack.prev
+alt + shift + cmd - l : yabai -m window --focus stack.next
+
+alt + shift - return : yabai -m window --swap largest
+alt + shift - space : yabai -m window --toggle zoom-fullscreen
+
+alt + shift - r : skhd -r
+alt + shift + cmd - r : brew services restart yabai

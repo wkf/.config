@@ -1,0 +1,3 @@
+#!/usr/bin/env sh
+
+~/.config/yabai/main.sh "config"
